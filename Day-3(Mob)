@@ -1,0 +1,46 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+#define fastio ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+#define endl "\n"
+#define ll long long
+#define ld long double
+#define vll vector<ll>
+#define pb push_back
+#define eb emplace_back
+#define lb lower_bound
+#define ub upper_bound
+#define pll pair<ll,ll>
+#define vpll vector<pll>
+#define ff first
+#define ss second
+#define tll tuple<ll,ll,ll>
+#define vtll vector<tll> 
+#define mt make_tuple
+#define rep(i,a,b) for(ll i=a; i<b; i++)
+#define rrep(i,a,b) for(ll i=a; i>=b; i--)
+#define vect(a,n) vll a(n); rep(i,0,n) cin>>a[i];
+#define all(a) a.begin(),a.end()
+#define sortall(a) sort(a.begin(),a.end());
+#define PI acos(-1)
+ 
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        ll n,m,k,x;
+        cin>>n>>m>>k>>x;
+        
+        ll c=0;
+        
+        if(( x%((n*k)+m)==0) || ( x%((n*k)+m)- (n*(k-1))>0))
+        cout<<"YES"<<endl;
+        else
+        cout<<"NO"<<endl;
+      
+    }
+ 
+    return 0;
+}
